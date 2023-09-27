@@ -25,8 +25,12 @@
             <div class="row justify-content-center">
                 <div class="tablist d-flex mt-3">
 
-                    <div class="col-lg-3 col-md-4 nav d-flex flex-column nav-pills me-3 " id="v-pills-tab"
+                    <div class="col-lg-3 col-md-4 nav d-flex text-center flex-column nav-pills me-3 " id="v-pills-tab"
                         role="tablist" aria-orientation="vertical">
+
+                        <div class="prof-img mb-3">
+                            <img src="assets/img/portrait-(5).jpg" alt="prof-img" class="img-fluid rounded-circle">
+                        </div>
 
                         <button class="nav-link active position-relative rounded-0 border-0 mb-2"
                             id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
@@ -40,12 +44,6 @@
                             ها
                         </button>
 
-                        <button class="nav-link position-relative rounded-0 border-0 mb-2" id="v-pills-course-tab"
-                            data-bs-toggle="pill" data-bs-target="#v-pills-course" type="button" role="tab"
-                            aria-controls="v-pills-course" aria-selected="true">دوره
-                            های من
-                        </button>
-
                         <button class="nav-link position-relative rounded-0 border-0 mb-2" id="v-pills-onmeeting-tab"
                             data-bs-toggle="pill" data-bs-target="#v-pills-onmeeting" type="button" role="tab"
                             aria-controls="v-pills-onmeeting" aria-selected="false">جلسات
@@ -54,11 +52,11 @@
                     </div>
 
 
-                    <div class="col-md-9 col-sm-10 tab-content pe-3 " id="v-pills-tabContent">
+                    <div class="col-md-8 col-sm-10 tab-content pe-3 ps-2 mb-5" id="v-pills-tabContent">
 
-                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                        <div class=" tab-pane show" id="v-pills-profile" role="tabpanel"
                             aria-labelledby="v-pills-profile-tab" tabindex="0">
-                            <div class="inner me-md-5">
+                            <div class="inner me-md-5  pb-5">
                                 <div class="card-header pe-0 ps-0">
                                     <div class="heading pt-3 ">
                                         <h5>
@@ -84,17 +82,36 @@
                                             class="form-control form-control-sm" required>
                                     </div>
                                 </div>
-
+                                <button type="submit" class="btn btn-success pe-4 ps-4 mt-3 me-4">
+                                    ذخیره
+                                </button>
                             </div>
-                        </div>
-
-                        <div class="tab-pane fade show active" id="v-pills-course" role="tabpanel"
-                            aria-labelledby="v-pills-course-tab" tabindex="0">
 
                         </div>
 
-                        <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel"
-                            aria-labelledby="v-pills-disabled-tab" tabindex="0">...
+                        <div class="tab-pane fade" id="v-pills-message" role="tabpanel"
+                            aria-labelledby="v-pills-message-tab" tabindex="0">
+                            <div class="inner me-md-5">
+                                <div class="card-header pe-0 ps-0">
+                                    <div class="heading">دریافت شده</div>
+                                </div>
+                                <div class="card-body d-flex">
+                                    <h5 class="card-title mt-2 ms-auto"> مدیر سایت</h5>
+                                    <p class="badge bg-info rounded-circle">5</p>
+                                    <a href="#" class="btn btn-danger me-2 rounded-circle">+</a>
+                                </div>
+                            </div>
+
+                            <div class="inner me-md-5">
+                                <div class="card-header pe-0 ps-0">
+                                    <div class="heading">ارسال شده</div>
+                                </div>
+                                <div class="card-body d-flex">
+                                    <h5 class="card-title mt-2 ms-auto">به مدیر سایت</h5>
+                                    <p class="badge bg-info rounded-circle">5</p>
+                                    <a href="#" class="btn btn-danger me-2 rounded-circle">+</a>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="tab-pane fade" id="v-pills-onmeeting" role="tabpanel"
@@ -112,38 +129,26 @@
                                     <div class="dropdown-divider mb-4">
                                     </div>
 
-                                    <div class="tabs-body">
-                                        <div class=" id=" tab1">
-                                            <a class="online-session" href="#">
-                                                <div class="details">
-                                                    <div class="info">
-                                                        <span class="title">سیدخندان</span>
-                                                        <span class="title">284775</span>
-                                                    </div>
-                                                    <div class="text">
-                                                        Web Design II آنلاین </div>
+                                    <div class="card-body__info p-2">
+                                        <a class="online-session" href="#">
+                                            <div class="details">
+                                                <div class="info">
+                                                    <span class="title">سیدخندان</span>
+                                                    <span class="title">284775</span>
                                                 </div>
-                                                <div class="time" dir="rtl">
-                                                    1402-05-07 17:30 تا 20:30</div>
-                                                <div class="conversation-tools">
-                                                </div>
-                                            </a>
-
-
-                                        </div>
-
+                                                <div class="text">
+                                                    Web Design II آنلاین </div>
+                                            </div>
+                                            <div class="time">
+                                                1402-05-07 17:30 تا 20:30</div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="tab-pane fade" id="v-pills-message" role="tabpanel"
-                            aria-labelledby="v-pills-message-tab" tabindex="0">...
-                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 

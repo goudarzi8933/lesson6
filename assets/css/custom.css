@@ -1,6 +1,3 @@
-/* .nav.nav-pills {
-  border-radius: none !important;
-} */
 body {
   font-family: Vazirmatn, sans-serif;
 
@@ -12,6 +9,11 @@ A {
 }
 ul li {
   list-style-type: none;
+}
+
+.tablist .prof-img img {
+  width: 200px;
+  height: 180px;
 }
 
 .nav-link:not(.active) {
@@ -34,35 +36,45 @@ ul li {
   top: 0;
   border-top: 30px solid transparent !important;
   border-bottom: 30px solid transparent !important;
-  /* border-right: 45px solid #b2b2b2 !important; */
 }
 .nav-link:hover {
   background: #0d6efd !important;
 }
 
 .inner {
-  margin: 35px 0;
+  margin: 35px 0 0;
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  /* padding: 0 30px 25px; */
 }
 .inner .card-header .heading {
-  font-size: 22px;
+  font-size: 17px;
   color: #fff;
   font-weight: 700;
-  /* background: #0d6efd !important; */
   padding: 9px;
   background: #0d6efd;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  /* margin: 0 -30px 24px; */
 }
-.form-control:focus {
+#v-pills-message .inner .badge {
+  width: 30px;
+  height: 30px;
+  padding: 10px 3px;
+}
+#v-pills-message .inner .btn {
+  width: 31px;
+  height: 31px;
+  padding: 3px 3px;
+}
+.inner .form-control:focus {
   outline: none;
   box-shadow: none;
 }
 
-.card-body__title {
+.card-body a:hover {
+  color: #2a2a2a !important;
+}
+.card-body__info {
+  background: #e9eaeb;
 }
 
 @media screen and (max-width: 768px) {
@@ -72,5 +84,10 @@ ul li {
   .nav {
     width: 80%;
     /* margin-bottom: 25px; */
+  }
+}
+@media screen and (max-width: 576px) {
+  .tab-content {
+    width: 95%;
   }
 }
